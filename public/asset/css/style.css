@@ -1,0 +1,231 @@
+:root {
+    --primary-text: #006680;
+    --gradient-primary: #70aebd;
+    --gradient-secondary: #e7e7e7;
+}
+
+body a {
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.col-gap-1 {
+    column-gap: 1rem;
+    row-gap: 1rem;
+}
+
+.col-gap-2 {
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+
+.nav {
+    background-color: #9cc8c8;
+    column-gap: 3rem;
+    row-gap: 3rem;
+}
+
+.nav-login {
+    column-gap: 2rem;
+}
+
+.nav-item {
+    column-gap: 3rem;
+}
+
+.main-content {
+    background: linear-gradient(to bottom, var(--gradient-primary), var(--gradient-secondary));
+    padding: 3rem 5rem;
+    min-height: 90vh;
+}
+
+.primary-text {
+    color: var(--primary-text);
+}
+
+.search-icon {
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+}
+
+.search-bar {
+    background-color: #d7eef3;
+}
+
+.text-underline {
+    text-decoration: underline;
+}
+
+.btn-primary {
+    background-color: black;
+}
+
+.upload-university {
+    width: 180px;
+    height: 180px;
+    background-color: rgb(204, 204, 204);
+}
+
+.authority-form-container,
+.student-form-container {
+    background: linear-gradient(to bottom, var(--gradient-primary), #9ebcc3);
+    padding: 2rem 2rem !important;
+}
+
+.authority-form-container {
+    border-width: 2px;
+    border-style: solid;
+    border-image: linear-gradient(to bottom, rgb(101, 156, 169), var(--gradient-secondary)) 1;
+}
+
+.student-form-container {
+    background: transparent !important;
+
+    border-width: 2px;
+    border-style: solid;
+    border-image: linear-gradient(to bottom, var(--gradient-primary), var(--primary-text)) 1;
+}
+
+.filter-btn {
+    background-color: #5ea1b2;
+    padding: .5rem 2rem;
+    border: 1px solid var(--primary-text);
+}
+
+.custom-btn-primary {
+    color: white;
+    padding: .5rem 1.5rem;
+    background-color: var(--primary-text);
+    transition: all .5s;
+}
+
+.custom-btn-primary:hover {
+    background-color: var(--gradient-primary);
+}
+
+.custom-btn-secondary {
+    background-color: var(--primary-text) !important;
+    padding: .5rem 1.5rem !important;
+}
+
+.authority-done-btn {
+    background-color: var(--primary-text) !important;
+    padding: .1rem .9rem !important;
+}
+
+.authority-input {
+    background: transparent;
+    border: none;
+    text-align: center;
+    display: inline !important;
+}
+
+.icon,
+.icon-2,
+.icon-3 {
+    width: 130px;
+    height: 130px;
+    border-radius: 100px;
+    border: 2px solid var(--primary-text);
+    object-fit: cover;
+}
+
+.icon-2 {
+    width: 80px !important;
+    height: 80px !important;
+    background-color: var(--primary-text);
+    border: none;
+    object-position: center;
+    object-fit: contain !important;
+}
+
+.qr-code {
+    background-color: #5ea1b2;
+}
+
+.icon-3 {
+    width: 250px !important;
+    height: 250px !important;
+    background-color: var(--primary-text);
+    border-radius: 200px !important;
+}
+
+.custom-form-control-1 {
+    padding: 1rem;
+    background: transparent;
+    border: 1px solid var(--primary-text);
+}
+
+.custom-form-control-2 {
+    padding: 1rem;
+    background: var(--gradient-primary);
+    border: 1px solid var(--primary-text);
+}
+
+.custom-form-control-1 {
+    font-weight: bold;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.custom-card {
+    /* background-color: #66adbf; */
+    background: linear-gradient(to bottom, #5ea1b2, #71a8b6);
+    border-radius: 20px;
+    padding: 1rem;
+}
+
+.card-container {
+    padding: 0rem 4rem;
+}
+
+@media (max-width: 720px) {
+    .university-container {
+        visibility: hidden;
+    }
+
+    .qr-container {
+        visibility: hidden;
+    }
+}
+
+@media (max-width: 992px) {
+    .search-container {
+        display: none !important;
+    }
+
+    .main-content {
+        padding: 2rem 2rem;
+        height: 100%;
+    }
+
+    .hero-container {
+        align-items: center;
+    }
+
+    .card-container {
+        padding: 0rem 2rem;
+    }
+}
+
+@media (max-width:992px) {
+    .register {
+        height: 50px;
+    }
+}
+
+@media (max-width: 920px) {
+    .nav-item {
+        display: none;
+    }
+
+}
